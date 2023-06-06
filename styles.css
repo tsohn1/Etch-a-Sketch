@@ -1,7 +1,24 @@
 body {
+  margin: 0px;
+}
+.title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.button-container {
   display: flex;
   justify-content: center;
 }
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 750px;
+}
+
 .grid{
   width: 750px;
   height: 750px;
@@ -23,4 +40,13 @@ body {
 
 .filled {
   background-color: black;
+}
+
+
+
+.content {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
