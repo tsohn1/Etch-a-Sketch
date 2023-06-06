@@ -36,7 +36,12 @@ function prompt_dimensions() {
   let new_dimensions = parseInt(user_input);
 
   while (new_dimensions < 1 || new_dimensions > 100 || isNaN(new_dimensions)) {
-    user_input = prompt("your number is out of range. Please enter a number between 1~100:");
+    if (isNaN(new_dimensions)) {
+      user_input = prompt("invalid input. Please enter a number between 1~100:");
+    }
+    else {
+      user_input = prompt("your number is out of range. Please enter a number between 1~100:");
+    }
     new_dimensions = parseInt(user_input);
   }
 
