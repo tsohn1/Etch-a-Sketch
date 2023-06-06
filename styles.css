@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.grid{
+  width: 750px;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.square {
+  border: 1px solid black;
+  flex: auto;
+}
+
+.row {
+  display: flex;
+  flex: auto;
+}
